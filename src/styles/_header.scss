@@ -11,6 +11,26 @@
   }
 }
 
+.navigation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: auto;
+  color:#FFF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .about {
+  /* Styles for the Blog section */
+  }
+  .certifications {
+  /* Styles for the Pictures section */
+  }
+  .letters {
+    /* Styles for the Pictures section */
+    }
+}
+
+
 .header {
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
@@ -137,23 +157,4 @@
         color: $sec;
       }
   }
-}
-
-
-.navigation {
-  font-family: 'Montserrat', sans-serif;
-  margin-left: auto;
-  color:#FFF;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 20px;
-}
-
-.about {
-  /* Styles for the Blog section */
-}
-
-.expertise {
-  /* Styles for the Pictures section */
 }
