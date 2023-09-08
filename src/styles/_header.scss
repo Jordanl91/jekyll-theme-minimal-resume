@@ -138,3 +138,37 @@
       }
   }
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #0074BD; /* Set background color as needed */
+}
+
+h1 {
+  color: #FFF; /* Set text color as needed */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px; /* Adjust spacing between links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF; /* Set link color as needed */
+}
+
+/* Align links to the right */
+nav {
+  margin-left: auto;
+}
