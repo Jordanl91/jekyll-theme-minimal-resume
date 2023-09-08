@@ -27,3 +27,4 @@ exclude: ['package.json', 'src', 'node_modules', 'vendor']
 navbar-links:
   About: "about"
   Certifications: "certifications"
+  Letters: "letters"
