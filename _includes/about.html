@@ -14,43 +14,46 @@
           <path fill="#EA2D2E" d=""></path>
           <!-- Placeholder for the fetched SVG content -->
           <path fill="#0074BD" d=""></path>
-      </svg>
-  
-      <!-- JavaScript to fetch and replace SVG paths -->
-      <script>
-          // URLs of the SVGs you want to fetch
-          const svgPaths = [
-              'https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg',
-              'https://upload.wikimedia.org/wikipedia/commons/6/64/Microsoft_Office_Visio_%282019%29.svg',
-              'https://upload.wikimedia.org/wikipedia/commons/1/10/Microsoft_Office_OneNote_%282019%E2%80%93present%29.svg'
-          ];
-  
-          // Function to fetch SVG content and replace the path element
-          function fetchAndReplaceSVG(index) {
-              fetch(svgPaths[index])
-                  .then(response => response.text())
-                  .then(svgText => {
-                      // Find the corresponding path element by index
-                      const pathElement = document.querySelector(`svg path:nth-child(${index + 3})`);
-  
-                      // Set the fetched SVG content as the "d" attribute of the path
-                      pathElement.setAttribute('d', svgText);
-                  })
-                  .catch(error => {
-                      console.error(`Error fetching SVG ${index + 1}:`, error);
-                  });
-          }
-  
-          // Fetch and replace each SVG path
-          svgPaths.forEach((_, index) => {
-              fetchAndReplaceSVG(index);
-          });
-      </script>
+        </svg>
       </div>
       <!-- Add more tech-icons with SVG elements as needed -->
     </div>
-    <p>I feel comfortable working on the front-end, going from pure CSS &amp; HTML5 to Sass, Bootstrap, or AngularJS/2+, VueJS and whatever!</p>
+    <p>I feel comfortable working on the front-end, going from pure CSS &amp; HTML5 to Sass, Bootstrap, or AngularJS/2+, VueJS, and whatever!</p>
+  </div>
 
+  <!-- JavaScript to fetch and replace SVG paths -->
+  <script>
+    // URLs of the SVGs you want to fetch
+    const svgPaths = [
+      'https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/64/Microsoft_Office_Visio_%282019%29.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/1/10/Microsoft_Office_OneNote_%282019%E2%80%93present%29.svg'
+    ];
+
+    // Function to fetch SVG content and replace the path element
+    function fetchAndReplaceSVG(index) {
+      fetch(svgPaths[index])
+        .then(response => response.text())
+        .then(svgText => {
+          // Find the corresponding path element by index
+          const pathElement = document.querySelector(`svg path:nth-child(${index + 3})`);
+
+          // Set the fetched SVG content as the "d" attribute of the path
+          pathElement.setAttribute('d', svgText);
+        })
+        .catch(error => {
+          console.error(`Error fetching SVG ${index + 1}:`, error);
+        });
+    }
+
+    // Fetch and replace each SVG path after the DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      svgPaths.forEach((_, index) => {
+        fetchAndReplaceSVG(index);
+      });
+    });
+  </script>
+  
 </div>
   <div class="tech">
     <h2>Code</h2>
