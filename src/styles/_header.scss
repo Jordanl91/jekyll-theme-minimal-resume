@@ -17,11 +17,16 @@
   text-align: center;
   color:#FFF;
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 90%;
+  right: 90%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  .navigation:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
   .site-title {
     font-size: 50px;
     display: block;
