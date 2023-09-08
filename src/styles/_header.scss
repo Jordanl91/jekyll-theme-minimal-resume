@@ -21,10 +21,14 @@ nav {
     display: flex;
     nav li {
       margin-right: 10px; /* Adjust spacing between links */
-      nav a {
-        text-decoration: none;
-        color: #FFF; /* Set link color as needed */
-      }
+    }
+    nav a {
+      text-decoration: none;
+      color: #FFF; /* Set link color as needed */
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      font-size: 18px;
     }
   }
 }
