@@ -11,30 +11,6 @@
   }
 }
 
-  /* Align links to the right */
-nav {
-  font-family: 'Montserrat', sans-serif;
-  margin-left: auto;
-  color:#FFF;
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    nav li {
-      margin-right: 10px; /* Adjust spacing between links */
-    }
-    nav a {
-      text-decoration: none;
-      color: #FFF; /* Set link color as needed */
-      position: absolute;
-      top: 8px;
-      right: 16px;
-      font-size: 18px;
-    }
-  }
-}
-
 .header {
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
