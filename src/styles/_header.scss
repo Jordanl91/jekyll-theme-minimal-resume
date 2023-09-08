@@ -144,7 +144,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px; /* Adjust padding as needed */
-  background-color: #0074BD; /* Set background color as needed */
+  background-color: #FFF; /* Set background color as needed */
 }
 
 h1 {
@@ -153,6 +153,9 @@ h1 {
 }
 
 nav ul {
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  text-align: right;
   list-style: none;
   margin: 0;
   padding: 0;
