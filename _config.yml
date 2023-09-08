@@ -20,3 +20,10 @@ github_username:  jordanl91
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
 
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  About: "about"
+  Certifications: "certifications"
