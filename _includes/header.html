@@ -1,13 +1,15 @@
 <div id="particles-js">
-  <div class="header">
-  <div class="navi-links">
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/pictures/">Pictures</a></li>
-  </div>  
+  <div class="header"> 
       <h1>
         <span class="site-title">{{ site.username }}</span>
         <span class="site-description">{{ site.user_title }}</span>
       </h1>
+      <nav>
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/pictures">Pictures</a></li>
+        </ul>
+      </nav>
       <div class="header-icons">
         {% if site.email %}
         <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
