@@ -12,18 +12,19 @@
 }
 
 /* Styles for the header links */
-.header-right {
+.nav-links {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 10px;
+  top: 50px;
+  right: 20px;
   z-index: 999;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
   color: #FFF;
 }
 
-.header-link {
+.nav-links a {
+  display: block;
+  margin-bottom: 10px;
   font-size: 24px;
   color: #FFF;
   text-decoration: none;
@@ -32,7 +33,7 @@
 }
 
 /* Add hover effect if desired */
-.header-link:hover {
+.nav-links a {
   text-decoration: underline;
 }
 
