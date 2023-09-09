@@ -22,6 +22,31 @@
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  /* Inside _header.scss */
+  .nav-links {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 2;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
+    color: white;
+    background-color: rgba(0, 0, 0, 0); /* Add a background with some opacity */
+    padding: 10px 20px; /* Add padding to the links */
+    border-radius: 5px; /* Add rounded corners for a nice effect */
+  }
+  .nav-links a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 30px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  /* Remove underline from links */
+  .nav-links a:hover {
+    text-decoration: none;
+  }
   .site-title {
     font-size: 50px;
     display: block;
@@ -139,30 +164,3 @@
   }
 }
 
-/* Inside _header.scss */
-.nav-links {
-  position: absolute;
-  top: 10px; /* Adjust the top position as needed */
-  right: 20px; /* Adjust the right position as needed */
-  z-index: 2;
-  font-size: 30px;
-  font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
-  color: white;
-  background-color: rgba(0, 0, 0, 0); /* Add a background with some opacity */
-  padding: 10px 20px; /* Add padding to the links */
-  border-radius: 5px; /* Add rounded corners for a nice effect */
-}
-
-.nav-links a {
-  display: inline-block;
-  margin: 5px 10px;
-  font-size: 30px;
-  color: #FFF;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Remove underline from links */
-.nav-links a:hover {
-  text-decoration: none;
-}
