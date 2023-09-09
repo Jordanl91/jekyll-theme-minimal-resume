@@ -4,6 +4,18 @@ title: Letters
 permalink: /letters/
 ---
 
-<!-- Add your certifications content here -->
-<h1>Letters</h1>
-<p>This is the Letters page content.</p>
+<div class="content">
+	<section class="letters">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			{% if page.heading %}
+				<h2>{{ page.heading }}</h2>
+			{% elsif page.title and page.layout != 'archive' %}
+				<h2>{{ page.title }}</h2>
+			{% endif %}
+			{% if page.description %}
+				<p class="subtext">{{ page.description }}</p>
+			{% endif %}
+			{{ content }}
+		</div>
+	</section>
+</div>
