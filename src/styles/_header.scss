@@ -11,18 +11,10 @@
   }
 }
 
-/* Styles for the header links */
+/* Styles for the navigation links */
 .nav-links {
-  position: absolute;
-  top: 10%; /* Adjust the top position as needed */
-  right: 10%; /* Adjust the right position as needed */
-  z-index: 2;
-  font-size: 30px;
-  font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);/* Add a background with some opacity */
-  padding: 10px 20px; /* Add padding to the links */
-  border-radius: 5px; /* Add rounded corners for a nice effect */
+  display: flex; /* Display links horizontally */
+  justify-content: flex-end; /* Align links to the right */
 }
 
 .nav-links a {
@@ -31,34 +23,15 @@
   font-size: 30px;
   color: #FFF;
   text-decoration: none;
-  margin-right: 20px; /* Adjust the margin as needed to space out the links */
-  font-family: 'Montserrat', sans-serif; 
+  margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.nav-links a:link {
-  display: inline-block;
-  margin: 5px 10px;
-  font-size: 30px;
-  color: #FFF;
-  text-decoration: none;
-  margin-right: 20px; /* Adjust the margin as needed to space out the links */
-  font-family: 'Montserrat', sans-serif; 
-}
-
-.nav-links a:visited {
-  display: inline-block;
-  margin: 5px 10px;
-  font-size: 30px;
-  color: #FFF;
-  text-decoration: none;
-  margin-right: 20px; /* Adjust the margin as needed to space out the links */
-  font-family: 'Montserrat', sans-serif; 
-}
-
-/* Add hover effect if desired */
+/* Remove underline from links */
 .nav-links a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
+
 
 
 .header {
