@@ -12,20 +12,22 @@
 @import 'certifications';
 
 /* Styles for the header links */
-.nav-container {
+.nav-links {
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
     z-index: 2;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
     color: white;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);/* Add a background with some opacity */
+    padding: 10px 20px; /* Add padding to the links */
+    border-radius: 5px; /* Add rounded corners for a nice effect */
   }
   
   .nav-links a {
     display: inline-block;
-    margin-bottom: 10px;
+    margin: 5px 10px;
     font-size: 24px;
     color: #FFF;
     text-decoration: none;
