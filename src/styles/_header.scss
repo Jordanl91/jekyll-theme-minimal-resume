@@ -11,8 +11,7 @@
   }
 }
 
-/* Styles for the navigation links */
-/* Styles for the navigation links */
+/* Inside _header.scss */
 .nav-links {
   position: absolute;
   top: 10px; /* Adjust the top position as needed */
@@ -39,9 +38,6 @@
 .nav-links a:hover {
   text-decoration: none;
 }
-
-
-
 
 .header {
   font-family: 'Montserrat', sans-serif;
