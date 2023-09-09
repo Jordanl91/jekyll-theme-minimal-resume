@@ -19,3 +19,11 @@ github_username:  jordanl91
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
+
+nav_links:
+  - name: "About"
+    url: "about.html"  # Link to the About page
+  - name: "Certifications"
+    url: "certifications.html"  # Link to the Certifications page
+  - name: "Letters"
+    url: "letters.html"  # Link to the Letters page
