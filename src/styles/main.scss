@@ -10,3 +10,29 @@
 @import 'footer';
 @import 'letters';
 @import 'certifications';
+
+/* Styles for the header links */
+.nav-links {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 999;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
+    color: #FFF;
+  }
+  
+  .nav-links a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 20px; /* Adjust the margin as needed to space out the links */
+    font-family: 'Montserrat', sans-serif; 
+  }
+  
+  /* Add hover effect if desired */
+  .nav-links a {
+    text-decoration: underline;
+  }
