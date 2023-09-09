@@ -19,12 +19,3 @@ github_username:  jordanl91
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
-
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
-
-navbar-links:
-About: "about"
-Certifications: "certifications"
-Letters: "letters"
