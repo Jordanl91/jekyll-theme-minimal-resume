@@ -17,6 +17,9 @@ github_username:  jordanl91
 # medium_username: lorem_ipsum
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
+section_about: About
+section_certs: Certifications
+section_resume: Resume
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
 
