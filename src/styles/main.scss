@@ -12,11 +12,11 @@
 @import 'certifications';
 
 /* Styles for the header links */
-.nav-links {
+.nav-container {
     position: absolute;
     top: 50px;
     right: 20px;
-    z-index: 999;
+    z-index: 1000;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
     color: #FFF;
@@ -33,6 +33,6 @@
   }
   
   /* Add hover effect if desired */
-  .nav-links a {
+  .nav-links a:hover {
     text-decoration: underline;
   }
