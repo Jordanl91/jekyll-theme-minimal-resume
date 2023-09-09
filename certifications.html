@@ -3,7 +3,18 @@ layout: page
 title: Certifications
 permalink: /certifications/
 ---
-
-<!-- Add your certifications content here -->
-<h1>Certifications</h1>
-<p>This is the certifications page content.</p>
+<div class="content">
+	<section class="certifications">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			{% if page.heading %}
+				<h2>{{ page.heading }}</h2>
+			{% elsif page.title and page.layout != 'archive' %}
+				<h2>{{ page.title }}</h2>
+			{% endif %}
+			{% if page.description %}
+				<p class="subtext">{{ page.description }}</p>
+			{% endif %}
+			{{ content }}
+		</div>
+	</section>
+</div>
