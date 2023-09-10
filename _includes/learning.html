@@ -1,4 +1,21 @@
+<html>
+<head>
+    <style>
+        /* CSS to style the container and arrange PDFs side by side */
+        .pdf-container {
+            width: 40%; /* Adjust the width as needed */
+            float: left; /* Float the containers to the left */
+            margin-right: 20px; /* Add some spacing between the PDFs */
+        }
 
+        /* Clear the float to prevent issues with following content */
+        .pdf-container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
 <body>
     <header>
         <h1>Performance Reviews</h1>
@@ -6,12 +23,15 @@
     <main>
         <section class="reviews">
             <h2>Reviews</h2>
-            <ul>
-              <iframe src="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" width="20%" height="300" style="border: none"></iframe>
-                <li><a href="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" target="_blank">LoR - Meriplex - Sean Ward</a></li>
-                <li><a href="/assets/pdfs/Jlevinson - Resume.pdf" target="_blank">Review 2</a></li>
-                <!-- Add more reviews as needed -->
-            </ul>
+            <div class="pdf-container">
+                <iframe src="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" width="100%" height="300" style="border: none"></iframe>
+                <p><a href="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" target="_blank">LoR - Meriplex - Sean Ward</a></p>
+            </div>
+            <div class="pdf-container">
+                <iframe src="/assets/pdfs/Jlevinson - Resume.pdf" width="100%" height="300" style="border: none"></iframe>
+                <p><a href="/assets/pdfs/Jlevinson - Resume.pdf" target="_blank">Review 2</a></p>
+            </div>
+            <!-- Add more reviews as needed -->
         </section>
     </main>
 </body>
