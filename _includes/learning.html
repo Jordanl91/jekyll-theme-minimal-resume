@@ -1,71 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Certifications & Official Training</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .certs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .certs_column1, .certs_column2 {
+            flex: 1;
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .certs_column1, .certs_column2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 <body>
-  <header>
-      <h1 style="display: flex; justify-content: center;">Certifications & Official Training</h1>
-  </header>
-  <main>
-    <section class="certs" style="display: flex; justify-content: space-between;">
-      <section class="certs_column1" style="display: flex; width: 50%;">
-          <ul>
-            <h2 style="text-align: center;">Cisco</h2>
-            <br>
-              <li><a href="/assets/pdfs/Certifications/Cisco/700-150 - Introduction to Cisco Sales.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - 700-150 - Introduction to Cisco Sales</a></li>
-              <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - CCENT 100-105 - Entry Network Technician</a></li>
-              <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - CCNA R&S 200-125 - Network Administrator Route & Switch</a></li>              
-              <!-- Add more reviews as needed -->
-          </ul>
-          <ul>
-            <h2 style="text-align: center;">Dell</h2>
-            <br>
-              <li><a href="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">LoR - Meriplex - Sean Ward</a></li>
-              <li><a href="/assets/pdfs/Jlevinson - Resume.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Review 2</a></li>
-              <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE1 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE1 - Network Security Associate</a></li>
-              <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE2 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE2 - Network Security Associate</a></li>
-              <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE3 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE3 - Network Security Associate</a></li>
-              <!-- Add more reviews as needed -->
-          </ul>
-          <ul>
-            <h2 style="text-align: center;">Fortigate</h2>
-            <br>
-              <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE1 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE1 - Network Security Associate</a></li>
-              <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE2 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE2 - Network Security Associate</a></li>
-              <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE3 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE3 - Network Security Associate</a></li>
-              <!-- Add more reviews as needed -->
-          </ul>
-      </section>
-      <section class="certs_column2" style="display: flex; justify-content: center; width: 50%;">
-          <ul>
-            <h2 style="text-align: center;">Meraki</h2>
-            <br>
-              <li><a href="/assets/pdfs/Certifications/Meraki/Meraki - CMNA Certificate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Meraki - CMNA Certificate</a></li>
-              <!-- Add more reviews as needed -->
-          </ul>
-          <ul>
-            <h2 style="text-align: center;">VMWare</h2>
-            <br>
-              <li><a href="/assets/pdfs/Certifications/VMware/VMware vSAN Plan and Deploy v7.0 Cert.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VMware - vSAN Plan and Deploy v7.0 Cert</a></li>
-              <li><a href="/assets/pdfs/Certifications/VMware/VSP-SDWAN 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VSP-SDWAN 2021</a></li>
-              <li><a href="/assets/pdfs/Certifications/VMware/VSP-TZ VMWare Tanzu Standard 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VSP-TZ VMWare Tanzu Standard 2021</a></li>
-              <li><a href="/assets/pdfs/Certifications/VMware/VTSP-CB Carbon Black Endpoint Protection 2020.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-CB Carbon Black Endpoint Protection 2020</a></li>
-              <li><a href="/assets/pdfs/Certifications/VMware/VTSP-DAV Desktop and App Virtualization 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-DAV Desktop and App Virtualization 2021</a></li>
-              <li><a href="/assets/pdfs/Certifications/VMware/VTSP-SASE 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-SASE 2021</a></li>
-              <li><a href="/assets/pdfs/Certifications/VMware/VTSP-TZ VMWare Tanzu Standard 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-TZ VMWare Tanzu Standard 2021</a></li>
-              <!-- Add more reviews as needed -->
-          </ul>
-          <ul>
-            <h2 style="text-align: center;">Zscaler</h2>
-            <br>
-              <li><a href="/assets/pdfs/Certifications/Zscaler/ZCCA-IA Internet Access 10-10-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCCA-IA - Internet Access</a></li>
-              <li><a href="/assets/pdfs/Certifications/Zscaler/ZCCA-PA Private Access 10-18-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCCA-PA - Private Access</a></li>
-              <li><a href="/assets/pdfs/Certifications/Zscaler/ZCTS Cloud Transformation Specialist 09-16-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCTS - Cloud Transformation Specialist</a></li>
-              <!-- Add more reviews as needed -->
-          </ul>
-      </section>
-    </section>
-  </main>
+    <!-- ... rest of your HTML code ... -->
+    <body>
+      <header>
+          <h1 style="display: flex; justify-content: center;">Certifications & Official Training</h1>
+      </header>
+      <main>
+        <section class="certs" style="display: flex; justify-content: space-between;">
+          <section class="certs_column1" style="display: flex; width: 50%;">
+              <ul>
+                <h2 style="text-align: center;">Cisco</h2>
+                <br>
+                  <li><a href="/assets/pdfs/Certifications/Cisco/700-150 - Introduction to Cisco Sales.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - 700-150 - Introduction to Cisco Sales</a></li>
+                  <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - CCENT 100-105 - Entry Network Technician</a></li>
+                  <li><a styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Cisco - CCNA R&S 200-125 - Network Administrator Route & Switch</a></li>              
+                  <!-- Add more reviews as needed -->
+              </ul>
+              <ul>
+                <h2 style="text-align: center;">Dell</h2>
+                <br>
+                  <li><a href="/assets/pdfs/Letter of Recommendation - Sean Ward.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">LoR - Meriplex - Sean Ward</a></li>
+                  <li><a href="/assets/pdfs/Jlevinson - Resume.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Review 2</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE1 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE1 - Network Security Associate</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE2 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE2 - Network Security Associate</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE3 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE3 - Network Security Associate</a></li>
+                  <!-- Add more reviews as needed -->
+              </ul>
+              <ul>
+                <h2 style="text-align: center;">Fortigate</h2>
+                <br>
+                  <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE1 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE1 - Network Security Associate</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE2 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE2 - Network Security Associate</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Fortigate/Fortigate - NSE3 - Network Security Associate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Fortigate - NSE3 - Network Security Associate</a></li>
+                  <!-- Add more reviews as needed -->
+              </ul>
+          </section>
+          <section class="certs_column2" style="display: flex; justify-content: center; width: 50%;">
+              <ul>
+                <h2 style="text-align: center;">Meraki</h2>
+                <br>
+                  <li><a href="/assets/pdfs/Certifications/Meraki/Meraki - CMNA Certificate.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Meraki - CMNA Certificate</a></li>
+                  <!-- Add more reviews as needed -->
+              </ul>
+              <ul>
+                <h2 style="text-align: center;">VMWare</h2>
+                <br>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VMware vSAN Plan and Deploy v7.0 Cert.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VMware - vSAN Plan and Deploy v7.0 Cert</a></li>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VSP-SDWAN 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VSP-SDWAN 2021</a></li>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VSP-TZ VMWare Tanzu Standard 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VSP-TZ VMWare Tanzu Standard 2021</a></li>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VTSP-CB Carbon Black Endpoint Protection 2020.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-CB Carbon Black Endpoint Protection 2020</a></li>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VTSP-DAV Desktop and App Virtualization 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-DAV Desktop and App Virtualization 2021</a></li>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VTSP-SASE 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-SASE 2021</a></li>
+                  <li><a href="/assets/pdfs/Certifications/VMware/VTSP-TZ VMWare Tanzu Standard 2021.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">VTSP-TZ VMWare Tanzu Standard 2021</a></li>
+                  <!-- Add more reviews as needed -->
+              </ul>
+              <ul>
+                <h2 style="text-align: center;">Zscaler</h2>
+                <br>
+                  <li><a href="/assets/pdfs/Certifications/Zscaler/ZCCA-IA Internet Access 10-10-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCCA-IA - Internet Access</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Zscaler/ZCCA-PA Private Access 10-18-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCCA-PA - Private Access</a></li>
+                  <li><a href="/assets/pdfs/Certifications/Zscaler/ZCTS Cloud Transformation Specialist 09-16-19.pdf" target="_blank" styles="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex;">Zscaler - ZCTS - Cloud Transformation Specialist</a></li>
+                  <!-- Add more reviews as needed -->
+              </ul>
+          </section>
+        </section>
+      </main>
+    </body>  
 </body>
 </html>
