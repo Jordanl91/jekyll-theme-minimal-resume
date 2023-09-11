@@ -6,19 +6,9 @@ description: Jekyll Theme Minimal Resume
 
 # User settings
 username: Jordan Levinson
-user_description: "I am a skilled professional in Enterprise Environments, with almost a decade of experience. Strong business forcus with a expertise varying from Hybrid Cloud Architechture, Automation, Network & Network Design, Virtualization, Cloud Security, Cryptography and much more. Bilingual communication skills in English and Spanish, I have a knack for understanding customer business requirements and crafting tailored solutions. I am now seeking opportunities to further my knowledge, grow personally, and embark on a new career path in Enterprise environments where I can continue my AI focused path, all while contributing to a great company.  
-<br> 
-<br> I'm Jordan V. Levinson, a seasoned network engineer and architect with a diverse range of skills and a passion for innovation. With extensive experience in network infrastructure, cloud security, virtualization, and communication technologies, I bring a holistic approach to solving complex problems. My ability to communicate effectively in both English and Spanish has proven invaluable in understanding clients' unique business requirements.
-<br> 
-<br> Professionally, I excel in designing, optimizing, and maintaining network infrastructures for businesses of all sizes. My expertise spans VeloCloud, Cisco, Fortigate, Meraki, Juniper, and cloud security solutions. What sets me apart is my knack for translating technical jargon into understandable language for clients, ensuring they get precisely what they need.
-<br> 
-<br> I'm not just looking for opportunities; I'm eager to contribute to an organization's growth while nurturing my AI-focused career path. My experience as a Senior Network Engineer V/Architect at Tetra Technologies involved managing and optimizing complex networks, leading projects, and ensuring security compliance.
-<br> 
-<br> During my tenure at GFI Digital, I collaborated closely with sales teams to design network and security solutions tailored to clients' business requirements. I also provided architectural network design expertise and delivered post-sales implementation, showcasing my ability to bridge the gap between technical and non-technical stakeholders.
-<br> 
-<br> At Dell Technologies, I acted as a technical escalation point and design/deployment specialist, working closely with customers to ensure their virtualized environments ran optimally. My role also involved troubleshooting complex issues, documenting solutions, and providing feedback for product improvements.
-<br> 
-<br> In summary, my expertise extends far beyond technical know-how; it's about delivering innovative solutions, fostering effective communication, and driving growth. I'm passionate about leveraging my skills to solve real-world challenges and contribute meaningfully to my field."
+user_description: "<p style=text-indent: 30px;> I'm Jordan V. Levinson, a seasoned network engineer and architect with a unique business-first perspective. With nearly a decade of experience in Enterprise Environments, I understand not only the technical intricacies but also the financial and administrative complexities of running a business. My expertise spans Hybrid Cloud Architecture, Automation, Network Design, Virtualization, Cloud Security, and Cryptography. Fluent in both English and Spanish, I excel in understanding customer needs and crafting tailored solutions.</p>
+<br>
+<p  style=text-indent: 30px;>My approach to every challenge is rooted in three core principles: "Think, Plan, Execute." I believe in first understanding the broader business context ("Think"), then meticulously planning solutions that align with a company's financial and operational goals ("Plan"), and finally implementing these strategies efficiently and effectively ("Execute"). This holistic approach ensures that the solutions I design not only meet technical requirements but also drive business growth and success. As I continue my AI-focused career path, I'm eager to leverage my skills to solve real-world challenges and make a significant impact in the enterprise sector.</p>"
 user_description1:
 user_description2:
 user_description3:
