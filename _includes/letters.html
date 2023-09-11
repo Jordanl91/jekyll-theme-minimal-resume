@@ -1,58 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
- <style>
-  .container {
-    z-index: 1 !important;
-    background: white !important;
-    padding: 2em !important;
-  }
-  blockquote {
-    padding: 2em 1.5em 2em 2em !important;
-    position: relative !important;
-    color: #999 !important;
-  }
-  blockquote p {
-    color: #555 !important;
-  }
-  @media screen and (min-width: 300px) {
-   blockquote {
-   border: 1px solid gray !important;
-  }
-   blockquote:before, blockquote:after {
-   background-color:white !important;
-   font-size: 3em !important;
-   font-weight: 800 !important;
-   position: absolute !important;
-   z-index: 20 !important;
-  }
-   blockquote:before {
-   content:url('http://download.easyicon.net/png/534874/32/') !important;
-   width: 34px !important;
-   height: 31px !important;
-   left: 2px !important;
-   top: 2px !important;
-   -ms-transform: rotate(178deg) !important; /* IE 9 */
-   -webkit-transform: rotate(178deg) !important; /* Chrome, Safari, Opera */
-   transform: rotate(178deg) !important;
-  }
-   blockquote:after {
-   content:url('http://download.easyicon.net/png/534874/32/') !important;
-   width: 31px !important;
-   height: 37px !important;
-   right: 3px !important;
-   bottom: 0px !important;
-  }
-  }
-  blockquote cite {
-    font-size: 14px !important;
-    margin-top: 5px !important;
-    margin-bottom: -7px !important;
-  }
-  blockquote cite:before {
-    content:"\2014 \2009" !important;
-  }
- </style>
 </head> 
 <body>
     <header>
@@ -97,8 +45,8 @@
     <header>
       <h1  style="display: flex; justify-content: center;">References</h1>
     </header>
-    <div class="container" style="z-index: 1; background: white; padding: 2em;">
-        <img src="https://www.une.edu/sites/default/files/2021-05/default-person.png" class="avatar" style="vertical-align: middle; border-radius: 50%; width: 20%;">
+    <div class="container" style="z-index: 1; background: white; padding: 2em; position: relative;">
+        <img src="https://www.une.edu/sites/default/files/2021-05/default-person.png" class="avatar" style="position: absolute; top: 10%; left: 10%; border-radius: 50%; width: 20%;">
         <blockquote style="padding: 2em 1.5em 2em 2em; position: relative; color: #999;">
         <p style="color: #555; font;"><em>"I had the opportunity to work with Jordan both as a contractor and a coworker. I was able to witness both the breadth and scope of his vast knowledge. He has an acute attention to detail and possesses both the drive and determination to push projects past the finish line. I hope to work with him again on future projects."</em></p>
         <footer> <cite>Dwayne D.</cite> </footer>
