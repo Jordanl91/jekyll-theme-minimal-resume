@@ -3,42 +3,45 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-/* Default styles for mobile view */
-.nav-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        /* Default styles for mobile view */
+        .nav-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.nav-item {
-    margin: 5px 0;
-}
+        .nav-item {
+            margin: 5px 0;
+        }
 
-/* Styles for desktop view */
-@media (min-width: 768px) {
-    .nav-header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+        /* Styles for desktop view */
+        @media (min-width: 768px) {
+            .nav-header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
 
-    .nav-item {
-        margin: 0 10px;
-    }
-}
-</style>
+            .nav-item {
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
 
-<div id="particles-js">
-  <div class="header"> 
-    <div class="header-icons">
-      <a aria-label="Home" href="/" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
-      <a aria-label="Learning" href="/learning.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Learning</a>
-      <a aria-label="Letters of Recommendation" href="/letters.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Letters</a>
+<body>
+    <div id="particles-js">
+        <div class="header"> 
+            <div class="header-icons nav-header">
+                <a class="nav-item" aria-label="Home" href="/" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
+                <a class="nav-item" aria-label="Learning" href="/learning.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Learning</a>
+                <a class="nav-item" aria-label="Letters of Recommendation" href="/letters.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Letters</a>
+            </div>
+            <h1>
+                <span class="site-title">Resume</span>
+                <span class="site-description">CV - Work History</span>
+            </h1>
+        </div>
+        <a class="down" href="#resume" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
-    <h1>
-      <span class="site-title">Resume</span>
-      <span class="site-description">CV - Work History</span>
-    </h1>
-  </div>
-  <a class="down" href="#resume" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
+</body>
+</html>
