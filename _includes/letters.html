@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .container {
+	z-index: 1;
+	background: white;
+	padding: 2em;
+}
+blockquote {
+	padding: 2em 1.5em 2em 2em;
+	position: relative;
+	color: #999;
+}
+blockquote p {
+	color: #555;
+}
+@media screen and (min-width: 300px) {
+ blockquote {
+ border: 1px solid gray;
+}
+ blockquote:before, blockquote:after {
+ background-color:white;
+ font-size: 3em;
+ font-weight: 800;
+ position: absolute;
+ z-index: 20;
+}
+ blockquote:before {
+ content:url('http://download.easyicon.net/png/534874/32/');
+ width: 34px;
+ height: 31px;
+ left: 2px;
+ top: 2px;
+ -ms-transform: rotate(178deg); /* IE 9 */
+ -webkit-transform: rotate(178deg); /* Chrome, Safari, Opera */
+ transform: rotate(178deg);
+}
+ blockquote:after {
+ content:url('http://download.easyicon.net/png/534874/32/');
+ width: 31px;
+ height: 37px;
+ right: 3px;
+ bottom: 0px;
+}
+}
+blockquote cite {
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: -7px;
+}
+blockquote cite:before {
+	content:"\2014 \2009";
+}
+  </style>
 </head> 
 <body>
     <header>
