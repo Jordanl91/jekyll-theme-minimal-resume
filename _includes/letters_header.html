@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Default styles for mobile view */
-        .nav-header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add FontAwesome if you haven't already -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .header {
+      font-family: 'Montserrat',sans-serif;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+    /* Default styles for mobile view */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .nav-item {
-            margin: 5px 0;
-        }
+    .nav-item {
+      margin: 5px 0;
+    }
 
-        /* Styles for desktop view */
-        @media (min-width: 768px) {
-            .nav-header {
-                flex-direction: row;
-                justify-content: space-between;
-            }
+    /* Styles for desktop view */
+    @media (min-width: 768px) {
+      .nav-links {
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
-            .nav-item {
-                margin: 0 10px;
-                text-decoration: none;
-            }
-        }
-    </style>
+      .nav-item {
+        margin: 0 10px;
+        text-decoration: none;
+      }
+    }
+  </style>
 </head>
-<div id="particles-js">
-  <div class="header"> 
-    <div class="header-icons">
-      <a aria-label="Home" href="/" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
-      <a aria-label="Learning" href="/learning.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Learning</a>
-      <a aria-label="My Resume" href="/resume.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Resume</a>
+<body>
+  <div id="particles-js">
+    <div class="header"> 
+      <div class="nav-links">
+        <a aria-label="Home" href="/" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
+        <a aria-label="Learning" href="/learning.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Learning</a>
+        <a aria-label="My Resume" href="/resume.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Resume</a>
+      </div>
+      <h1>
+        <span class="site-title">Letters of Recommendation</span>
+        <span class="site-description">(inc. References)</span>
+      </h1>
     </div>
-    <h1>
-      <span class="site-title">Letters of Recommendation</span>
-      <span class="site-description">(inc. References)</span>
-    </h1>
+    <a class="down" href="#letters" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
   </div>
-  <a class="down" href="#letters" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
+</body>
+</html>
