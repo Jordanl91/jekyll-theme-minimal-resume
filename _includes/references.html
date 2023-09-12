@@ -25,6 +25,13 @@
               flex-wrap: wrap;
               padding: 0 2%; /* Added padding to ensure the boxes don't touch the edges */
         }
+            /* Styling for the image within the blockquote */
+        .blockquote .avatar {
+            width: 80px; /* Adjust as needed */
+            height: 80px; /* Adjust as needed */
+            border-radius: 50%;
+            margin-right: 1em; /* Space between the image and the text */
+        }
 
             /* Review Section */
         .review-section {
@@ -49,6 +56,8 @@
         .blockquote {
               display: flex; /* Use flexbox */
               padding: 1em;
+              gap: 1em;
+              align-items: center;
               font-family: 'Montserrat', sans-serif;
               font-size: 20px;
               position: relative;
@@ -57,10 +66,12 @@
               flex: 1;
               /* Take available space */
         }
-        blockquote p {
+        .blockquote p {
               font-family: 'Montserrat', sans-serif;
               color: #555;
               font-size: 20px;
+              flex: 1;
+              margin: 0;
         }
   
 
@@ -117,6 +128,14 @@
             flex-wrap: wrap; /* Allow wrapping to the next line if the viewport is too small */
         }
         @media (max-width: 768px) {
+              .blockquote {
+                  flex-direction: column; /* Stack the image and text vertically */
+                  align-items: flex-start; /* Align items to the start */
+              }
+
+              .blockquote .avatar {
+                  margin-bottom: 1em; /* Space between the image and the text on mobile */
+              }
               .container {
                   flex-direction: column;
                   max-width: 100%;
