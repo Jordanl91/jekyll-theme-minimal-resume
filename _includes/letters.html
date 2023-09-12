@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
   <style>
 .container {
 	z-index: 1;
@@ -9,44 +9,38 @@
 	padding: 2em;
   display: flex; 
   align-items: center; 
-  max-width: 33%;
+  max-width: 60%; /* Adjusted from 33% for better visibility */
 }
 blockquote {
-	padding: 2em 1.5em 2em 2em;
+	padding: 1em;
 	position: relative;
 	color: #999;
+	border: 1px solid gray;
 }
 blockquote p {
 	color: #555;
 }
-@media screen and (min-width: 300px) {
- blockquote {
- border: 1px solid gray;
+blockquote:before, blockquote:after {
+	background-color:white;
+	font-size: 3em;
+	font-weight: 800;
+	position: absolute;
+	z-index: 20;
 }
- blockquote:before, blockquote:after {
- background-color:white;
- font-size: 3em;
- font-weight: 800;
- position: absolute;
- z-index: 20;
+blockquote:before {
+	content:url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
+	width: 34px;
+	height: 31px;
+	left: 2px;
+	top: 2px;
+	transform: rotate(178deg);
 }
- blockquote:before {
- content:url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
- width: 34px;
- height: 31px;
- left: 2px;
- top: 2px;
- -ms-transform: rotate(178deg); /* IE 9 */
- -webkit-transform: rotate(178deg); /* Chrome, Safari, Opera */
- transform: rotate(178deg);
-}
- blockquote:after {
- content:url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
- width: 31px;
- height: 37px;
- right: 3px;
- bottom: 0px;
-}
+blockquote:after {
+	content:url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
+	width: 31px;
+	height: 37px;
+	right: 3px;
+	bottom: 0px;
 }
 blockquote cite {
 	font-size: 14px;
@@ -60,7 +54,7 @@ blockquote cite:before {
 </head> 
 <body>
     <header>
-        <h1  style="display: flex; justify-content: center;">Letters of Recommendation</h1>
+        <h1 style="display: flex; justify-content: center;">Letters of Recommendation & References</h1>
     </header>
     <main>
         <section class="reviews">
