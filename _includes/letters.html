@@ -75,7 +75,52 @@
               /* Fixed height for consistency */
               margin-left: 20px;
           }
-   
+          
+          blockquote:before,
+          blockquote:after {
+              background-color: white;
+              font-size: 1em;
+              /* Adjusted size for better proportion */
+              position: absolute;
+              z-index: 20;
+          }
+  
+          blockquote:before {
+              content: url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
+              width: 10px;
+              /* Adjusted size */
+              height: 10px;
+              /* Adjusted size */
+              left: 5px;
+              /* Adjusted position */
+              top: 5px;
+              /* Adjusted position */
+              transform: rotate(178deg);
+          }
+  
+          blockquote:after {
+              content: url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
+              border-bottom: 3px solid #555;
+              width: 10px;
+              /* Adjusted size */
+              height: 10px;
+              /* Adjusted size */
+              right: 5px;
+              /* Adjusted position */
+              bottom: 5px;
+              /* Adjusted position */
+          }
+  
+          blockquote cite {
+              font-size: 18px;
+              margin-top: 5px;
+              margin-bottom: -7px;
+          }
+  
+          blockquote cite:before {
+              content: "\2014 \2009";
+          }
+    
           @media (max-width: 768px) {
               .container {
                   flex-direction: column;
