@@ -4,25 +4,16 @@
   <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper scaling on mobile devices -->
   <style>
-    
-    q {
-            color: white;
-            text-decoration: none;
-            display: block;
-            transition: color 0.3s;
-    }
-
-    q:hover {
-            color: white;
-    }
     .container {
       z-index: 1;
       background: white;
       padding: 2em;
       display: flex; 
       align-items: center; 
-      max-width: 90%; /* Adjusted for mobile view */
       margin: 0 auto; /* Center the container */
+      flex: 1;
+      max-width: 33%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     blockquote {
       padding: 1em;
@@ -66,12 +57,18 @@
     blockquote cite:before {
       content: "\2014 \2009";
     }
-    @media (min-width: 768px) { /* Styles for larger screens */
-      .container {
-        max-width: 60%;
-      }
-      blockquote:before, blockquote:after {
-        font-size: 2em; /* Larger quote marks for desktop */
+    @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .avatar {
+                margin: 0 auto 1em;
+            }
+            blockquote:before, blockquote:after {
+                font-size: 2em; /* Larger quote marks for desktop */
       }
     }
     
@@ -88,39 +85,10 @@
     }
   }
     .x-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2em;
-      justify-items: center;
-      align-items: center;
-      margin-top: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-
-    .x-container .container:nth-child(1) {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .x-container .container:nth-child(2) {
-      grid-column: 1;
-      grid-row: 3;
-    }
-
-    .x-container .container:nth-child(3) {
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-    .x-container .container:nth-child(4) {
-      grid-column: 3;
-      grid-row: 1;
-    }
-
-    .x-container .container:nth-child(5) {
-      grid-column: 3;
-      grid-row: 3;
-    }
-
     /* Adjustments for the avatar and text alignment */
     .avatar_box {
         display: flex;
@@ -200,9 +168,9 @@
     </header>
     <div class="x-container">
       <div class="container">
-        <img src="https://www.une.edu/sites/default/files/2021-05/default-person.png" class="avatar" style="border-radius: 50%; width: 17.5%; margin-right: 2em;">
-        <blockquote class="blockquote" style="padding: 1em 1em 1em 1em;color: #999;flex: 1;margin-left: 5px;">
-        <p style="color: #555; font-family: 'Montserrat', sans-serif; text-decoration: none; display: flex; justify-content: center;"><em>"I had the opportunity to work with Jordan both as a contractor and a coworker. I was able to witness both the breadth and scope of his vast knowledge. He has an acute attention to detail and possesses both the drive and determination to push projects past the finish line. I hope to work with him again on future projects."</em></p>
+        <img src="https://www.une.edu/sites/default/files/2021-05/default-person.png" class="avatar">
+        <blockquote class="blockquote">
+        <p><em>"I had the opportunity to work with Jordan both as a contractor and a coworker. I was able to witness both the breadth and scope of his vast knowledge. He has an acute attention to detail and possesses both the drive and determination to push projects past the finish line. I hope to work with him again on future projects."</em></p>
         <footer> <cite>Dwayne D. - Engineer</cite> </footer>
         </blockquote>
       </div>
