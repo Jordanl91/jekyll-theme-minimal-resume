@@ -74,6 +74,19 @@
         font-size: 2em; /* Larger quote marks for desktop */
       }
     }
+    
+      /* Mobile Styles */
+    @media (max-width: 768px) {
+      .flex-container {
+        flex-direction: column; /* Stack flex items vertically */
+    }
+    .flex-container > div {
+      width: 100%; /* Use full width on mobile */
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 20px; /* Add some space between stacked items */
+    }
+  }
     .x-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
