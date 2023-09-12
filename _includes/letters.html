@@ -116,7 +116,7 @@
           .avatar_box {
               display: flex;
               align-items: center;
-              justify-content: flex-start;
+              justify-content: space-between; /* Distribute space between the name and avatar */
           }
   
           .avatar {
@@ -145,19 +145,18 @@
               .x-container .container {
                   max-width: 100%;
               }
-          }
-  
-          .flex-container {
-              display: flex;
-              justify-content: space-between;
-              flex-wrap: wrap;
-          }
-  
-          @media (max-width: 768px) {
               .flex-container {
                   flex-direction: column;
+                  align-items: center; /* Center the boxes on mobile */
               }
-          }
+              .review-section {
+                  width: 90%; /* Take up more width on mobile */
+              }
+              .avatar_box {
+                  flex-direction: column; /* Stack name and avatar vertically on mobile */
+                  align-items: center; /* Center the name and avatar on mobile */
+              }
+            }
       </style>
 </head> 
 <body>
@@ -166,7 +165,7 @@
   </header>
   <main>
       <section class="reviews">
-          <div class="flex-container">
+          <div class="review-section">
               <!-- First Review Section -->
               <div style="width: 30%; margin: 0 1%; border-radius: 20px; background-color: #f2f2f2; padding: 20px;">
                   <div class="avatar_box" style="display: flex; align-items: center;">
