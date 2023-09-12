@@ -2,54 +2,64 @@
 <html>
 <head>
   <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper scaling on mobile devices -->
   <style>
-.container {
-	z-index: 1;
-	background: white;
-	padding: 2em;
-  display: flex; 
-  align-items: center; 
-  max-width: 60%; /* Adjusted from 33% for better visibility */
-}
-blockquote {
-	padding: 1em;
-	position: relative;
-	color: #999;
-	border: 1px solid gray;
-}
-blockquote p {
-	color: #555;
-}
-blockquote:before, blockquote:after {
-	background-color:white;
-	font-size: 3em;
-	font-weight: 800;
-	position: absolute;
-	z-index: 20;
-}
-blockquote:before {
-	content:url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
-	width: 34px;
-	height: 31px;
-	left: 2px;
-	top: 2px;
-	transform: rotate(178deg);
-}
-blockquote:after {
-	content:url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
-	width: 31px;
-	height: 37px;
-	right: 3px;
-	bottom: 0px;
-}
-blockquote cite {
-	font-size: 14px;
-	margin-top: 5px;
-	margin-bottom: -7px;
-}
-blockquote cite:before {
-	content:"\2014 \2009";
-}
+    .container {
+      z-index: 1;
+      background: white;
+      padding: 2em;
+      display: flex; 
+      align-items: center; 
+      max-width: 90%; /* Adjusted for mobile view */
+      margin: 0 auto; /* Center the container */
+    }
+    blockquote {
+      padding: 1em;
+      position: relative;
+      color: #999;
+      border: 1px solid gray;
+      flex: 1; /* Take available space */
+    }
+    blockquote p {
+      color: #555;
+    }
+    blockquote:before, blockquote:after {
+      background-color: white;
+      font-size: 1em; /* Adjusted size for better proportion */
+      position: absolute;
+      z-index: 20;
+    }
+    blockquote:before {
+      content: url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
+      width: 20px; /* Adjusted size */
+      height: 20px; /* Adjusted size */
+      left: 5px; /* Adjusted position */
+      top: 5px; /* Adjusted position */
+      transform: rotate(178deg);
+    }
+    blockquote:after {
+      content: url('https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png');
+      width: 20px; /* Adjusted size */
+      height: 20px; /* Adjusted size */
+      right: 5px; /* Adjusted position */
+      bottom: 5px; /* Adjusted position */
+    }
+    blockquote cite {
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: -7px;
+    }
+    blockquote cite:before {
+      content: "\2014 \2009";
+    }
+    @media (min-width: 768px) { /* Styles for larger screens */
+      .container {
+        max-width: 60%;
+      }
+      blockquote:before, blockquote:after {
+        font-size: 2em; /* Larger quote marks for desktop */
+      }
+    }
   </style>
 </head> 
 <body>
