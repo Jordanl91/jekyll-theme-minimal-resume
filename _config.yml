@@ -1,13 +1,13 @@
 # Site settings
 title: Jordan Levinson
-description: Jekyll Theme Minimal Resume
+description: My Personal Resume / Portfolio
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Jordan Levinson
 user_description: Welcome, I'm Jordan Levinson, a seasoned network engineer and architect with a unique business-first perspective. With nearly a decade of experience in Enterprise Environments, I understand not only the technical intricacies but also the financial and administrative complexities of running a business. My expertise spans Hybrid Cloud Architecture, Automation, Network Design, Virtualization, Cloud Security, Cryptography, Voice service, project management and much more. Fluent in both English and Spanish, I excel in understanding customer needs and crafting tailored solutions.
-user_description1: My approach to every challenge is rooted in three core principles, "Think, Plan, Execute." I believe in first understanding the broader business context ("Think"), then meticulously planning solutions that align with a company's financial and operational goals ("Plan"), and finally implementing these strategies efficiently and effectively ("Execute"). This holistic approach ensures that the solutions I design not only meet technical requirements but also drive business growth and success. As I continue my newly found AI-focused career path, I'm eager to leverage my skills to solve real-world challenges and make a significant impact in the enterprise sector.
+user_description1: My approach to every challenge is rooted in three core principles, <b>"Think, Plan, Execute."<b> I believe in first understanding the broader business context <b>("Think")<b>, then meticulously planning solutions that align with a company's financial and operational goals <b>("Plan")<b>, and finally implementing these strategies efficiently and effectively <b>("Execute")<b>. This holistic approach ensures that the solutions I design not only meet technical requirements but also drive business growth and success. As I continue my newly found AI-focused career path, I'm eager to leverage my skills to solve real-world challenges and make a significant impact in the enterprise sector.
 user_title: Senior Engineer / Architect
 email: jvlevinson@yahoo.com
 linkedin_username: jordanlevinson91
