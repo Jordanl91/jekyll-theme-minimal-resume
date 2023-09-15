@@ -51,13 +51,10 @@
               /* Take available space */
         }
         .blockquote {
-              display: flex; /* Use flexbox */
-              align-items: flex-start; /* Align items to the top */
-              padding: 1em;
-              gap: 1em;
-              align-items: center;
+
+              padding: .5em;
               font-family: 'Montserrat', sans-serif;
-              font-size: 16pt;
+              font-size: 12pt;
               position: relative;
               color: #999;
               border: 1px solid gray;
@@ -65,7 +62,7 @@
         .blockquote p {
               font-family: 'Montserrat', sans-serif;
               color: #555;
-              font-size: 20px;
+              font-size: 14px;
               flex: 1;
               margin: 0;
         }
@@ -117,10 +114,14 @@
             width: auto; /* Maintain the aspect ratio */
             margin-left: 5px; /* Space between the text and the image */
         }
+        iframe {
+            height: 250px; /* Reduced height */
+        }
+        h1 {
+            font-size: 24px; /* Reduced font size */
+        }        
         blockquote cite {
-              font-size: 18px;
-              margin-top: 5px;
-              margin-bottom: -7px;
+              font-size: 16px;
         }
         .containers-wrapper {
             display: flex; /* Use flexbox layout */
