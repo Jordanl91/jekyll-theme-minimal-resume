@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Certifications & Official Training</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .header {
-            font-family: 'Montserrat',sans-serif;
-            z-index: 1;
-            text-align: center;
-            color: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: 0 auto;
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-        }
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        header h1 {
+        .header {
+            font-family: 'Montserrat', sans-serif;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header h1, header h3 {
             text-align: center;
             padding: 20px 0;
+            display: flex;
+            justify-content: center;
         }
 
         main {
@@ -71,40 +73,58 @@
         }
 
         .vendors {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
-          padding: 60px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px;
         }
 
         .vendors img, .vendors a {
-          margin: 25px;
-          flex: 1;
-          max-width: calc((100%/6) - 30px); /* for 5 images in a row */
+            margin: 25px;
+            flex: 1;
+            max-width: calc((100% / 6) - 30px);
         }
 
         @media (max-width: 768px) {
             .certs {
                 flex-direction: column;
             }
+
             .certs_column1, .certs_column2 {
                 width: 100%;
             }
+
             .vendors img, .vendors a {
-              max-width: calc(35% - 20px);
-              margin: 15px 0;
+                max-width: calc(35% - 20px);
+                margin: 15px 0;
             }
-            .vendors {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              align-items: center;
-              padding: 60px 40px;
-            }
-         }
+        }
     </style>
 </head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNBPG24" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <header>
+        <h1>Certifications & Official Training</h1>
+        <h3>Click to Download</h3>
+    </header>
+
+    <main>
+        <!-- ... rest of your HTML code ... -->
+    </main>
+
+    <footer>
+        <p style="display: flex; justify-content: center;"><em>(and much more)</em></p>
+    </footer>
+</body>
+
+</html>
+
 <body>
 <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNBPG24"
@@ -175,7 +195,6 @@
               </ul>
           </section>
         </section>
-      </main>
       <header>
         <h1 style="display: flex; justify-content: center;">Education</h1>
       </header>
@@ -206,8 +225,8 @@
       <img src="https://logosdownload.com/logo/yealink-logo.svg" alt="Yealink"/>
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Axis_Communications_logo.svg" alt="Axis" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg" alt="Axis" />
-  </div>
-    </body>
+    </div>
+  </main>
     <p style="display: flex; justify-content: center;"><em>(and much more)</em></p>
 </body>
 </html>
