@@ -1,82 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PNNBPG24');</script>
-    <!-- End Google Tag Manager -->  
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-094W7MB2CS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-094W7MB2CS');
-  </script>
-  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Add FontAwesome if you haven't already -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    .header {
-      font-family: 'Montserrat',sans-serif;
-      z-index: 1;
-      text-align: center;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: 0 auto;
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-    }
-    /* Default styles for mobile view */
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title> <!-- Consider adding a title for SEO and clarity -->
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    .nav-item {
-      margin: 5px 0;
-    }
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PNNBPG24');
+    </script>
 
-    /* Styles for desktop view */
-    @media (min-width: 768px) {
-      .nav-links {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-094W7MB2CS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-      .nav-item {
-        margin: 0 10px;
-        text-decoration: none;
-      }
-    }
-  </style>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-094W7MB2CS');
+    </script>
+
+    <style>
+        /* Header Styles */
+        .header {
+            font-family: 'Montserrat', sans-serif;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0 auto;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Navigation Styles */
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 5px 0;
+            font-size: 30px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        /* Media Query for Desktop View */
+        @media (min-width: 768px) {
+            .nav-links {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .nav-item {
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNBPG24"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div id="particles-js">
-    <div class="header"> 
-      <div class="nav-links">
-        <a aria-label="Home" href="/#" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Home</a>
-        <a aria-label="References" href="/references.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">References</a>
-        <a aria-label="My Resume" href="/resume.html" style="font-size: 30px; color: white; font-family: 'Montserrat', sans-serif; text-decoration: none; padding: 10px 20px;">Resume</a>
-      </div>
-      <h1>
-        <span class="site-title">Learning</span>
-        <span class="site-description">Education & Certifications</span>
-      </h1>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNBPG24" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <div id="particles-js">
+        <div class="header">
+            <div class="nav-links">
+                <a aria-label="Home" class="nav-item" href="/#">Home</a>
+                <a aria-label="References" class="nav-item" href="/references.html">References</a>
+                <a aria-label="My Resume" class="nav-item" href="/resume.html">Resume</a>
+            </div>
+            <h1>
+                <span class="site-title">Learning</span>
+                <span class="site-description">Education & Certifications</span>
+            </h1>
+        </div>
+        <a class="down" href="#learning" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
-    <a class="down" href="#learning" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-  </div>
 </body>
+
 </html>
