@@ -1,24 +1,54 @@
 <style>
-          @media (max-width: 768px) {
-            .user {
-                flex-direction: column;
-            }
-            .tech {
-                width: 100%;
-            }
-        }
+  @media (max-width: 768px) {
+      .user {
+          flex-direction: column;
+      }
+      .tech {
+          width: 100%;
+      }
+  }
+
+  /* Image Styles */
+  .image-cropper img {
+      vertical-align: middle;
+      overflow: hidden;
+      border-radius: 50%;
+      max-height: 300px;
+      padding-top: 20px;
+  }
+
+  /* Heading Styles */
+  h1 {
+      margin-top: 0px;
+      padding-top: 10px;
+  }
+
+  /* Paragraph Styles */
+  p {
+      text-indent: 30px;
+  }
+
+  /* Tech Image Styles */
+  .tech img {
+      object-fit: contain;
+      height: 60px;
+      width: auto;
+  }
 </style>
+
 <div class="user-details">
   <div class="image-cropper">
-    <img src="/assets/images/IMG_1686_Square Reduced.jpg" class="rounded" style="vertical-align: middle;overflow: hidden;border-radius: 50%;max-height: 300px;padding-top: 20px;"/>
+      <img src="/assets/images/IMG_1686_Square Reduced.jpg" class="rounded" />
   </div>
-  <h1 style="margin-top: 0px; padding-top: 10px;">My Expertise</h1>
-  <p style="text-indent: 30px;">{{ site.user_description }}</p>
-  <p style="text-indent: 30px;">{{ site.user_description1 }}</p>
+  <h1>My Expertise</h1>
+  <p>{{ site.user_description }}</p>
+  <p>{{ site.user_description1 }}</p>
 </div>
+
+<!-- Repeated structure for tech details -->
 <div class="user">
   <div class="tech">
-    <h2>Networks</h2>
+      <h2>Networks</h2>
     <img src="https://finrange.com/storage/companies/logo/svg/NASDAQ_CSCO.svg" alt="Cisco" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
     <img src="https://raw.githubusercontent.com/Jordanl91/jekyll-theme-minimal-resume/master/assets/images/Juniper%20Networks%20GreenSquare.svg" alt="Juniper" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
     <img src="https://static.cdnlogo.com/logos/a/12/arista.svg" alt="Arista" width="auto" height="60" style="object-fit: contain; height: 60px; width: auto;" />
