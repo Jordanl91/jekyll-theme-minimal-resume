@@ -85,6 +85,19 @@
     z-index: -300;
 }
 
+.testimonial-quote blockquote p:first-child:after {
+    content: '\201C';
+    transform: rotate(180deg);
+    color: #81bedb;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;    
+    text-shadow: none;
+    z-index: -300;
+}
 .testimonial-quote img {
     border: 3px solid #9CC1D3;
     border-radius: 50%;
@@ -116,13 +129,13 @@
 
 .testimonial-quote {
     text-align: center;
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
 }
 
 .quote-container {
     display: inline-block;
-    text-align: left; /* This will ensure the content inside remains left-aligned */
+    text-align: center; /* This will ensure the content inside remains left-aligned */
 }
 
 img {
@@ -132,15 +145,16 @@ img {
   
 </style>
 
+
 <div class="user-details">
   <div class="image-cropper">
     <img src="/assets/images/IMG_1686_Square Reduced.jpg" class="rounded" />
   </div>
-  <div style="width: 960px;margin: 0 auto;padding-top: 10px;padding-bottom: 80px;"> 
+  <div style="width: 960px;margin: 0 auto;padding-top: 25px;padding-bottom: 10px;"> 
     <div class="testimonial-quote group">
         <div class="quote-container">
-            <blockquote>
-                <p style="margin-bottom: 0px; margin-top: 0px"> A Jack of all trades is a Master of None, but oftentimes <strong>BETTER</strong> than a Master of <u>One</u>.”</p>
+            <blockquote style="padding-bottom: 10px;">
+                <p style="margin-bottom: 0px; margin-top: 10px"> A Jack of all trades is a Master of None, but oftentimes <strong>BETTER</strong> than a Master of <u>One</u>.”</p>
             </blockquote> 
             <cite><span>Robert Greene</span><br>
               Spectating on Actor-turned-Playwright<br>
@@ -148,7 +162,7 @@ img {
           </cite>
       </div>
   </div>    
-  <h1>My Expertise</h1>
+  <h1 style="padding-top: 40px;">My Expertise</h1>
   <p>{{ site.user_description }}</p>
   <p>{{ site.user_description1 }}</p>
 </div>
