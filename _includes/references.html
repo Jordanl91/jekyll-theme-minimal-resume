@@ -74,35 +74,98 @@
             justify-content: center;
         }
 
-        .testimonial-quote {
-            position: relative;
-            font-size: 16px;
-        }
-
-        .testimonial-quote img {
-            border: 3px solid #9CC1D3;
-            border-radius: 50%;
-            display: block;
-            width: 120px;
-            height: 120px;
-            position: absolute;
-            top: -.2em;
-            left: 0;
-        }
-
-        .testimonial-quote .quote-container {
-            padding-left: 160px;
-        }
-
-        .testimonial-quote.right .quote-container {
-            padding-left: 0;
-            padding-right: 160px;
-        }
-
-        .testimonial-quote.right img {
-            left: auto;
-            right: 0;
-        }
+		.testimonial-quote {
+			font-size: 16px;
+		}
+		
+		.testimonial-quote blockquote {
+			/* Negate theme styles */
+			border: 0;
+			margin: 0;
+			padding: 0;
+		
+			background: none;
+			color: gray;
+			font-family: Georgia, serif;
+			font-size: 1.5em;
+			font-style: italic;
+			line-height: 1.4 !important;
+			margin: 0;
+			position: relative;
+			text-shadow: 0 1px white;
+			z-index: 600;
+		}
+		
+		.testimonial-quote blockquote * {
+			box-sizing: border-box; 
+		}
+		
+		.testimonial-quote blockquote p {
+			color: #75808a; 
+			line-height: 1.4 !important;
+		}
+		
+		.testimonial-quote blockquote p:first-child:before {
+			content: '\201C';
+			color: #81bedb;
+			font-size: 7.5em;
+			font-weight: 700;
+			opacity: .3;
+			position: absolute;
+			top: -.4em;
+			left: -.2em;    
+			text-shadow: none;
+			z-index: -300;
+		}
+		
+		.testimonial-quote img {
+			border: 3px solid #9CC1D3;
+			border-radius: 50%;
+			display: block;
+			width: 120px;
+			height: 120px;
+			position: absolute;
+			top: -.2em; 
+			left: 0;    
+		}
+		
+		.testimonial-quote cite {
+			color: gray;
+			display: block;
+			font-size: .8em; 
+		}
+		
+		.testimonial-quote cite span {
+			color: #5e5e5e;
+			font-size: 1em;
+			font-style: normal;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			text-shadow: 0 1px white; 
+		}
+		
+		.testimonial-quote {
+			position: relative; 
+		}
+		
+		.testimonial-quote .quote-container {
+			padding-left: 160px; 
+		}
+		
+		.testimonial-quote.right .quote-container {
+			padding-left: 0;
+			padding-right: 160px; 
+		}
+		
+		.testimonial-quote.right img {
+			left: auto;
+			right: 0;
+		}
+		
+		.testimonial-quote.right cite {
+			text-align: right; 
+		}
 
         @media (max-width: 768px) {
             .flex-container,
@@ -202,12 +265,15 @@
                 </blockquote>  
                 <cite><span>Laura S.</span><br>
                     Senior Network Engineer<br>
-                    Meta <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="avatar_meta_img">
+                    Meta 
                 </cite>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="avatar_meta_img">
             </div>
         </div>
     </div>
 	
+    <hr style="margin: 60px auto; opacity: .5;">
+
     <h1>Full-Width, Left-Aligned</h1>
     <div class="testimonial-quote group">
         <img src="https://media.licdn.com/dms/image/C5603AQFW-JrXJ98-kg/profile-displayphoto-shrink_100_100/0/1617665379479?e=1700092800&v=beta&t=tXodPx56JPuqTDwAZ12vC_n6XXLO5WunjNH89L5ZemQ" class="avatar" style="margin-right: 0px;">
