@@ -15,13 +15,6 @@
         padding: 5px; /* Reduced padding */
         font-size: 14px; /* Adjusted font size */
       }
-      .book-container {
-      flex-direction: column; /* Stack vertically on small screens */
-      align-items: center; /* Center the books horizontally */
-      }
-      .book {
-        width: 80%; /* Adjust the width to take more space on small screens */
-      }
     }
 
   /* Image Styles */
@@ -150,38 +143,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-/* Book Section */
-.book-container {
-    display: flex;
-    flex-direction: row; /* Default to horizontal layout */
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .book {
-    text-align: center;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 180px; /* Adjust the width as needed */
-  }
-  .book img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  .book-title {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-  }
-  .read-counter {
-    margin-top: 5px;
-    font-size: 1em;
-    color: #666;
-  }
   
 </style>
 
@@ -202,44 +163,9 @@ img {
           </cite>
       </div>
   </div>    
-
   <h1 style="padding-top: 40px;">My Expertise</h1>
   <p>{{ site.user_description }}</p>
   <p>{{ site.user_description1 }}</p>
-</div>
-
-<div class="book-container">
-  <h1> Current Reads</h1>
-  <!-- Book 1 -->
-  <div class="book">
-    <div class="book-title">Great Ceos Are Lazy</div>
-    <img src="/assets/images/Great CEOs are Lazy By Jim Schleckser.jpg" alt="Great CEOs are Lazy By Jim Schleckser">
-    <div class="read-counter">Times Read: 8</div>
-  </div>
-  <!-- Book 2 -->
-  <div class="book">
-    <div class="book-title">Never Split the Difference</div>
-    <img src="/assets/images/Never Split the Difference By Chris Voss.jpg" alt="Never Split the Difference By Chris Voss">
-    <div class="read-counter">Times Read: 3</div>
-  </div>
-  <!-- Book 3 -->
-  <div class="book">
-    <div class="book-title">The Four Agreements</div>
-    <img src="/assets/images/The Four Agreements By Don Miguel Ruiz.jpg" alt="The Four Agreements By Don Miguel Ruiz">
-    <div class="read-counter">Times Read: 2</div>
-  </div>
-  <!-- Book 4 -->
-  <div class="book">
-    <div class="book-title">Ego Is the Enemy</div>
-    <img src="/assets/images/EGO is the Enemy By Ryan Holiday.jpg" alt="EGO is the Enemy By Ryan Holiday">
-    <div class="read-counter">Times Read: 3</div>
-  </div>
-  <!-- Book 5 -->
-  <div class="book">
-    <div class="book-title">Atomic Habits</div>
-    <img src="/assets/images/Atomic Habits By James Clear.jpg" alt="Atomic Habits By James Clear">
-    <div class="read-counter">Times Read: 3</div>
-  </div>
 </div>
 
 <!-- Repeated structure for tech details -->
