@@ -84,23 +84,16 @@
             font-size: 24px;
         }
 
-        /* Styles for desktop view */
-        @media (min-width: 768px) {
-        .nav-links {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: row;
+                justify-content: space-between;
+            }
 
-        .nav-item {
-            margin: 0 10px;
-            text-decoration: none;
+            .site-title {
+                font-size: 30px;
+            }
         }
-
-        .site-title {
-            font-size: 76px;
-        }
-    
-    }
     </style>
 </head>
 
