@@ -1,0 +1,16 @@
+---
+layout: scheduling
+---
+<!DOCTYPE html>
+<link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+<html lang="en"></html>
+</div>
+{% include head.html %}
+<body>
+	{% include schedule_header.html %}
+	<section id="schedule">
+	  {% include schedule.html %}
+	</section>
+	  {{ content }}
+	{% include footer.html %}
+</body>
